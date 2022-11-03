@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class collections {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		input.close();
+		
+		User student1 = new User();
+		student1.setNames("Tebeck", "Collins");
+		User student2 = new User();
+		student2.setNames("mustapha", "xpi");
+		User student3 = new User();
+		student3.setNames("bih", "shedoo");
+		
+		List<User> users = new ArrayList<>();
+		users.add(student1);
+		users.add(student2);
+		users.add(student3);
+		
+		
+		System.out.println(users.get(2).getNames());
+	}
+
+}

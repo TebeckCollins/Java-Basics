@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class collections {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter number of courses: ");
+		int totalCourse = input.nextInt();
+		
+		List<Integer> grades = new ArrayList<>();
+
+		System.out.println("Enter scores: ");
+		
+		for(int i = 0; i < totalCourse; i++) {
+			int scores = input.nextInt();
+			grades.add(scores);
+		}
+		
+		for (int i = 0; i < grades.size(); i++) {
+			System.out.print(grades.get(i) + " ");
+		}
+		
+		System.out.println("\n");
+		System.out.println(Arrays.toString(grades.toArray()));
+		
+		
+		input.close();
+		
+	}
+
+}

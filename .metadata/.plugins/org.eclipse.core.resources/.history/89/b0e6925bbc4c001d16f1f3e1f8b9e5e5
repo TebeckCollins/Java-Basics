@@ -1,0 +1,9 @@
+public class User {
+	public String fName;
+	public String lName;
+	
+	public void output() {
+		System.out.println("My name is: " + fName + " " + lName);
+	}
+
+}
